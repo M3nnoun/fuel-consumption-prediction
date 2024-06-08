@@ -8,7 +8,7 @@ class InputData(BaseModel):
     input2: float
 
 try:
-    model = joblib.load('linearModel.pkl')
+    model = joblib.load('models/linearModel.pkl')
 except Exception as e:
     raise ValueError(f"Error loading the model: {e}")
 
